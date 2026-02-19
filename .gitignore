@@ -1,0 +1,11 @@
+/.env
+__pycache__/
+.venv/
+.idea/
+.vscode/
+
+pg_data/
+auction_data/
+
+.pytest_cache/
+.coverage
