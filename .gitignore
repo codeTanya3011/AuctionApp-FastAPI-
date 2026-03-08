@@ -1,11 +1,31 @@
-/.env
-__pycache__/
-.venv/
 .idea/
 .vscode/
+*.swp
+*.swo
+
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
 
 pg_data/
 auction_data/
+*.db
+*.sqlite3
+
+.env
+.env.*
 
 .pytest_cache/
 .coverage
+htmlcov/
+.mypy_cache/
+
+.DS_Store
+Thumbs.db

@@ -23,7 +23,7 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# что бы фронт подключался без ошибок
+# щоб фронт підключався без помилок
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

@@ -79,7 +79,7 @@ class AuctionService:
             if not lot:
                 raise AuctionException(status_code=404, detail="Лот не знайдено")
             if not user:
-                raise AuctionException(status_code=404, detail="Користувач не знайдено")
+                raise AuctionException(status_code=404, detail="Користувача не знайдено")
 
             if amount <= lot.current_price:
                 raise AuctionException(status_code=400, detail="Ставка повинна бути вищою за поточну ціну")

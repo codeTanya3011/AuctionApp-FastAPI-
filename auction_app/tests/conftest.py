@@ -7,7 +7,7 @@ from typing import AsyncGenerator
 from httpx import AsyncClient, ASGITransport
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.pool import NullPool
-from ..main import app
+from main import app
 from ..database import get_db, UnitOfWork
 from ..core import TEST_DATABASE_URL, LotStatus
 from ..models import Base

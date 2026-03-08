@@ -4,6 +4,7 @@ from sqlalchemy import select
 
 
 class UserRepo(BaseRepo):
+
     async def create_user(self, **user_data):
         new_user = User(**user_data)
         self.db.add(new_user)

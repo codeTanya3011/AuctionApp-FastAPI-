@@ -4,7 +4,7 @@ from datetime import datetime, timezone, timedelta
 from httpx import AsyncClient
 from fastapi.testclient import TestClient
 from starlette.websockets import WebSocketDisconnect
-from auction_app.main import app
+from main import app
 
 
 @pytest.mark.asyncio
@@ -96,6 +96,6 @@ async def test_websocket_broadcast(client: AsyncClient):
                 assert float(message["amount"]) == 150.00
 
         except WebSocketDisconnect as e:
-            pytest.fail(f"WebSocket закрылся слишком рано. Код: {e.code}")
+            pytest.fail(f"WebSocket закрився надто рано. Код: {e.code}")
         except Exception as e:
-            pytest.fail(f"Ошибка в тесте WebSocket: {type(e).__name__}: {e}")
+            pytest.fail(f"Помилка в тесте WebSocket: {type(e).__name__}: {e}")
